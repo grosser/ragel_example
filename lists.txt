@@ -1,0 +1,26 @@
+## Tasks
+- Go to Whole Foods
+    - Go to produce section   
+        - get oranges
+          maybe Mandarine and Valencia
+        - get avocados
+        - get squash
+          maybe buttercup if they have it
+    - Go to bakery section
+        - get bagels
+        - get 12 cupcakes 
+    - Go to Dairy
+    - get milk
+     	  should be organic 2% if they have it
+- Pay for items 
+   
+## Tasks
+- Write up a Ragel example for blog
+    - Create simple example for parsing lists   
+        - Ragel code for a parser
+          Should provide support for parsing multiple task lists.
+          It should also support hierarchical task lists
+    - Create a simple ruby class that uses the parser 
+    - post code as gists
+    - Write up a blog post describing the use of ragel in the example
+- Post to blog

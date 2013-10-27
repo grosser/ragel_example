@@ -3,25 +3,19 @@ class Parser
     machine test_lexer;
 
     action s { s = p; puts "s#{p}" }
-    action e { captured << data[s...p]; puts "e#{p}" }
+    action e { e = p; puts "e#{p}" }
     action captured {
-      puts "captured #{captured.inspect}"
-      captured.clear
+      puts "captured #{s} #{e}"
     }
-    action hello { puts "hello" }
+    key_value = "a" %s ("b" | "x" "c")+ %e %captured;
+    tags = ("x"+)? key_value;
 
-    word = "a"+;
-    value = (word | (space word))+ %hello;
-    key_value = '#' "public" >s %e space+ value >s %e %captured;
-    tags = ((space+)? key_value)*;
-
-    main := tags;
+    main := tags*;
   }%%
 
   def initialize(data)
     data = data
     eof = data.length
-    captured = []
     %% write data;
     %% write init;
     %% write exec;

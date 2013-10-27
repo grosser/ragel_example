@@ -2,22 +2,20 @@
 # line 1 "simple.rl"
 class Parser
   
-# line 19 "simple.rl"
+# line 14 "simple.rl"
 
 
   def initialize(data)
     data = data
     eof = data.length
-    captured = []
     
-# line 14 "simple.rb"
+# line 13 "simple.rb"
 class << self
 	attr_accessor :_test_lexer_actions
 	private :_test_lexer_actions, :_test_lexer_actions=
 end
 self._test_lexer_actions = [
-	0, 1, 0, 1, 1, 3, 3, 1, 
-	2
+	0, 1, 0, 2, 1, 2
 ]
 
 class << self
@@ -25,8 +23,7 @@ class << self
 	private :_test_lexer_key_offsets, :_test_lexer_key_offsets=
 end
 self._test_lexer_key_offsets = [
-	0, 0, 4, 5, 6, 7, 8, 9, 
-	10, 13, 17, 22, 26
+	0, 0, 2, 5, 7, 8, 10
 ]
 
 class << self
@@ -34,10 +31,8 @@ class << self
 	private :_test_lexer_trans_keys, :_test_lexer_trans_keys=
 end
 self._test_lexer_trans_keys = [
-	32, 35, 9, 13, 112, 117, 98, 108, 
-	105, 99, 32, 9, 13, 32, 97, 9, 
-	13, 32, 35, 97, 9, 13, 32, 35, 
-	9, 13, 32, 35, 97, 9, 13, 0
+	98, 120, 97, 99, 120, 97, 120, 99, 
+	97, 120, 97, 98, 120, 0
 ]
 
 class << self
@@ -45,8 +40,7 @@ class << self
 	private :_test_lexer_single_lengths, :_test_lexer_single_lengths=
 end
 self._test_lexer_single_lengths = [
-	0, 2, 1, 1, 1, 1, 1, 1, 
-	1, 2, 3, 2, 3
+	0, 2, 3, 2, 1, 2, 3
 ]
 
 class << self
@@ -54,8 +48,7 @@ class << self
 	private :_test_lexer_range_lengths, :_test_lexer_range_lengths=
 end
 self._test_lexer_range_lengths = [
-	0, 1, 0, 0, 0, 0, 0, 0, 
-	1, 1, 1, 1, 1
+	0, 0, 0, 0, 0, 0, 0
 ]
 
 class << self
@@ -63,8 +56,7 @@ class << self
 	private :_test_lexer_index_offsets, :_test_lexer_index_offsets=
 end
 self._test_lexer_index_offsets = [
-	0, 0, 4, 6, 8, 10, 12, 14, 
-	16, 19, 23, 28, 32
+	0, 0, 3, 7, 10, 12, 15
 ]
 
 class << self
@@ -72,11 +64,9 @@ class << self
 	private :_test_lexer_indicies, :_test_lexer_indicies=
 end
 self._test_lexer_indicies = [
-	0, 2, 0, 1, 3, 1, 4, 1, 
-	5, 1, 6, 1, 7, 1, 8, 1, 
-	9, 9, 1, 10, 11, 10, 1, 0, 
-	2, 12, 0, 1, 0, 2, 0, 1, 
-	13, 14, 12, 13, 1, 0
+	0, 2, 1, 3, 4, 5, 1, 3, 
+	5, 1, 4, 1, 3, 5, 1, 6, 
+	4, 7, 1, 0
 ]
 
 class << self
@@ -84,8 +74,7 @@ class << self
 	private :_test_lexer_trans_targs, :_test_lexer_trans_targs=
 end
 self._test_lexer_trans_targs = [
-	1, 0, 2, 3, 4, 5, 6, 7, 
-	8, 9, 9, 12, 12, 10, 2
+	6, 0, 4, 1, 6, 3, 1, 2
 ]
 
 class << self
@@ -93,8 +82,7 @@ class << self
 	private :_test_lexer_trans_actions, :_test_lexer_trans_actions=
 end
 self._test_lexer_trans_actions = [
-	0, 0, 0, 1, 0, 0, 0, 0, 
-	0, 3, 1, 1, 0, 5, 5
+	1, 0, 1, 0, 0, 0, 3, 3
 ]
 
 class << self
@@ -102,18 +90,17 @@ class << self
 	private :_test_lexer_eof_actions, :_test_lexer_eof_actions=
 end
 self._test_lexer_eof_actions = [
-	0, 0, 0, 0, 0, 0, 0, 0, 
-	0, 0, 0, 0, 5
+	0, 0, 0, 0, 0, 0, 3
 ]
 
 class << self
 	attr_accessor :test_lexer_start
 end
-self.test_lexer_start = 11;
+self.test_lexer_start = 5;
 class << self
 	attr_accessor :test_lexer_first_final
 end
-self.test_lexer_first_final = 11;
+self.test_lexer_first_final = 5;
 class << self
 	attr_accessor :test_lexer_error
 end
@@ -122,21 +109,21 @@ self.test_lexer_error = 0;
 class << self
 	attr_accessor :test_lexer_en_main
 end
-self.test_lexer_en_main = 11;
+self.test_lexer_en_main = 5;
 
 
-# line 26 "simple.rl"
+# line 20 "simple.rl"
     
-# line 131 "simple.rb"
+# line 118 "simple.rb"
 begin
 	p ||= 0
 	pe ||= data.length
 	cs = test_lexer_start
 end
 
-# line 27 "simple.rl"
+# line 21 "simple.rl"
     
-# line 140 "simple.rb"
+# line 127 "simple.rb"
 begin
 	_klen, _trans, _keys, _acts, _nacts = nil
 	_goto_level = 0
@@ -224,19 +211,14 @@ when 0 then
 when 1 then
 # line 6 "simple.rl"
 		begin
- captured << data[s...p]; puts "e#{p}" 		end
+ e = p; puts "e#{p}" 		end
 when 2 then
 # line 7 "simple.rl"
 		begin
 
-      puts "captured #{captured.inspect}"
-      captured.clear
+      puts "captured #{s} #{e}"
     		end
-when 3 then
-# line 11 "simple.rl"
-		begin
- puts "hello" 		end
-# line 240 "simple.rb"
+# line 222 "simple.rb"
 			end # action switch
 		end
 	end
@@ -267,19 +249,14 @@ when 3 then
 when 1 then
 # line 6 "simple.rl"
 		begin
- captured << data[s...p]; puts "e#{p}" 		end
+ e = p; puts "e#{p}" 		end
 when 2 then
 # line 7 "simple.rl"
 		begin
 
-      puts "captured #{captured.inspect}"
-      captured.clear
+      puts "captured #{s} #{e}"
     		end
-when 3 then
-# line 11 "simple.rl"
-		begin
- puts "hello" 		end
-# line 283 "simple.rb"
+# line 260 "simple.rb"
 		end # eof action switch
 	end
 	if _trigger_goto
@@ -293,7 +270,7 @@ end
 	end
 	end
 
-# line 28 "simple.rl"
+# line 22 "simple.rl"
   end
 end
 
